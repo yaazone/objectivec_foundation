@@ -16,11 +16,17 @@ int main(int argc, const char * argv[])
     int test = 2;
     char run_all = 'Y';
     
-    if (test == 1 || run_all == 'Y') {
+    if ( test == 1 || run_all == 'Y') {
         [auspr stringetc];
     }
     if ( test == 2 || run_all == 'Y' ) {
         [auspr arrayandloop];
+    }
+    if ( test == 3 || run_all == 'Y' ) {
+        [auspr arrayandquery];
+    }
+    if ( test == 4 || run_all == 'Y' ) {
+        [auspr arrayMutable];
     }
     
     return 0;

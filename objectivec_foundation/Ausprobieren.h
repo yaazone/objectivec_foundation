@@ -14,5 +14,7 @@
 
 - (void)stringetc;
 - (void)arrayandloop;
+- (void)arrayandquery;
+- (void)arrayMutable;
 
 @end

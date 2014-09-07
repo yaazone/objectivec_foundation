@@ -59,4 +59,46 @@
     
 }
 
+- (void)arrayandquery{
+    
+    
+    printf("--------------\n");
+    NSLog(@"array and query");
+    printf("--------------\n");
+    //array
+    NSArray *array1 = [[NSArray alloc]init];
+    array1 = [NSArray array];
+    array1 = @[@"test0", @"test1", @"test2"];
+    BOOL containsObject;
+    
+    containsObject = [array1 containsObject:@"test1"];
+    
+    
+    if (containsObject) {
+        NSLog(@"wahr");
+    }
+    
+}
+
+- (void)arrayMutable{
+    
+    
+    printf("--------------\n");
+    NSLog(@"array and Mutable");
+    printf("--------------\n");
+    //array
+    NSMutableArray *array1 = [[NSMutableArray alloc]init];
+    
+    [array1 addObject:@"test0"];
+    [array1 addObject:@"test1"];
+    [array1 addObject:@"test2"];
+    int i;
+    for (i = 0; i < [array1 count]; i++) {
+        NSString *tmp = [array1 objectAtIndex:i];
+        NSLog(tmp);
+    }
+    
+}
+
+
 @end
