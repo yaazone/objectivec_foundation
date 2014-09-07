@@ -5,60 +5,26 @@
 //  Created by m on 05/09/14.
 //  Copyright (c) 2014 com.learn. All rights reserved.
 //
-
+#import "Ausprobieren.h"
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[])
 {
+    Ausprobieren *auspr;
+    //auspr = [[Ausprobieren alloc]init];
+    auspr = [Ausprobieren initConvenience];
     int test = 2;
+    char run_all = 'Y';
     
-    if (test == 1) {
-        NSLog(@"%d, string etc", test);
-        int days_in_a_week = 7;
-        float cm_to_in = 2.54;
-        char the_w;
-        the_w = 'W';
-        
-        printf("Hello, World!\n");
-        printf("%d days in a week.\n", days_in_a_week);
-        printf("THe %c is cool hotel.\n", the_w);
-            
-        NSString *string = [NSString string];
-        string = @"erster NSString";
-        //const char *command = [string UTF8String];
-        NSLog(@"String variable ausgeben = %@", string);
-        
-        string = [string stringByReplacingOccurrencesOfString:@"SS" withString:@"AA"];
-        NSLog(string);
-        
+    if (test == 1 || run_all == 'Y') {
+        [auspr stringetc];
     }
-    else if ( test == 2) {
-        NSLog(@"%d, array and loop", test);
-        //array
-        NSArray *array1 = [[NSArray alloc]init];
-        array1 = [NSArray array];
-        array1 = @[@"test", @"test2"];
-        int i;
-        for (i = 0; i < [array1 count]; i++) {
-            NSString *tmp = [array1 objectAtIndex:i];
-            NSLog(tmp);
-        }
+    if ( test == 2 || run_all == 'Y' ) {
+        [auspr arrayandloop];
     }
+    
     return 0;
-}
-
-
-int objectCreation(){
     
-    //    int n = 5;
-     //   NSNumber *numberObject = [NSNumber numberWIthInt:n];
-    
-    
-    
-    
-    
-    
-    return 1;
 }
 
 
